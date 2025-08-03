@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webiz Digital Agency | Bootstrap Template </title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://www.nameagency.com">
+    <meta property="og:url" content="https://www.nameagency.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+
+    <style>
+    td {
+      vertical-align: middle !important;
+    }
+    .sil-icon {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .sil-icon:hover {
+      color: #c00;
+    }
+
+    </style>
+  </head>
+  <body>
+  <!-- Navbar Menu  ---->
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+       <a class="navbar-brand" href="#">
+         <img src="images/webiz-logo.png" alt="">
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa fa-bars"></i>
+       </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
+  <!-- Sepet Alanı -->
+  <section class="container my-5" style="margin-bottom: 50px; max-width: 1340px;">
+    <div class="row">
+      <!-- Ürün Tablosu -->
+      <div class="col-md-8">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>ÜRÜN</th>
+                <th>FİYAT</th>
+                <th>MİKTAR</th>
+                <th>ARA TOPLAM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-fiyat="6500" data-kdv="1083.33">
+                <td class="align-middle d-flex align-items-center" style="font-size: 14px;">
+                  <a href="#" class="text-danger mr-3 sil-icon" title="Ürünü Sil">
+                    <i class="fa fa-times"></i>
+                  </a>
+                  <img src="https://www.cagmedya.com/wp-content/uploads/cag-medya-1-300x300.png" width="50" class="rounded-circle mr-3" alt="">
+                  Standart Web Sitesi
+                </td>
+                <td class="align-middle" style="font-size: 14px;">₺6.500,00</td>
+                <td class="align-middle">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-secondary btn-sm azalt">-</button>
+                    <input type="text" class="form-control mx-1 text-center miktar" value="1" style="width: 50px;" readonly>
+                    <button class="btn btn-outline-secondary btn-sm arttir">+</button>
+                  </div>
+                </td>
+                <td class="align-middle" style="font-size: 16px;"><strong class="ara-toplam">₺6.500,00</strong></td>
+              </tr>
+            </tbody>
+            
+          </table>
+          <div class="text-right">
+            <button class="btn m-2 font-weight-bold guncelle" style="border: none; border-radius: 30px; font-size: 13px; padding: 12px 20px; color: #3333338c;">SEPETİ GÜNCELLE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sepet Özeti -->
+      <div class="col-md-4">
+        <div class="border p-4 rounded">
+          <h5>SEPET TOPLAMLARI</h5>
+          <div class="d-flex justify-content-between my-2">
+            <span>Ara Toplam</span>
+            <span class="ara-toplam2">₺6.500,00</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between mb-2">
+            <strong>Toplam</strong>
+            <strong class="toplam" style="color: #0e2054;">₺6.500,00</strong>
+          </div>
+          <small class="text-muted d-block text-right">(<span class="kdv" style="color: #0e2054;">₺1.083,33</span> KDV dahil)</small>
+          <a href="odeme.html" class="btn btn-primary btn-block mt-3" id="odemeLink" style="background: linear-gradient(to right, #1723b1,#58f0ff); border: none; border-radius: 30px; font-size: 14px; padding: 12px 20px; font-weight: 600;">ÖDEME SAYFASINA GİT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer ------>
+  <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-box">
+            <img src="images/webiz-logo.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="col-md-4 footer-box">
+              <p id="contact"><b>OUR OFFICE</b></p>
+              <p><i class="fa fa-map-marker"></i>Holloway Road, London</p>
+              <p><i class="fa fa-phone"></i>+44 074 675 86 965</p>
+              <p><i class="fa fa-envelope-o"></i>info@examle.com</p>
+          </div>
+          <div class="col-md-4 footer-box">
+              <p><b>SUBSCRIBE NEWSLETTER</b></p>
+              <input type="email"class="form-control" placeholder="Your Email">
+              <button type="button"class="btn btn-primary" name="button">Subscribe</button>
+
+              <div id="social">
+                  <p>Find Us On Social Media</p>
+                     <div class="social-icons">
+                        <a href="#" class="svg-icons"><img src="svg/facebook-logo.svg" alt=""></a>
+                        <a href="#" class="svg-icons"><img src="svg/instagram_.svg" alt=""></a>
+                        <a href="#" class="svg-icons"><img src="svg/twitter-logo.svg" alt=""></a>
+                        <a href="#" class="svg-icons"><img src="svg/whatsapp.svg" alt=""></a>
+                     </div>
+              </div>
+          </div>
+          <div class="col-md-6 ">
+            <p class="copyright">Copyright © 2019. All rights reserved | Designed by <a href="https://www.salvatoremandis.it/index-eng.html">Salvatore Mandis</a></p>
+          </div>
+          <div class="col-md-6 text-right">
+          <p class="copyright">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </p>
+          </div>
+        </div>
+        <br>
+      </div>
+  </section>
+
+
+<script>
+  document.querySelectorAll('.sil-icon').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const row = btn.closest('tr');
+      row.remove();
+    });
+  });
+
+
+  const araToplam2 = document.querySelector('.ara-toplam2');
+  const toplam = document.querySelector('.toplam');
+  const dataKDV = parseFloat(document.querySelector('tr[data-kdv]').getAttribute('data-kdv'));
+  const kdv = document.querySelector('.kdv');
+
+  document.querySelectorAll('tr[data-fiyat]').forEach(function (row) {
+    const birimFiyat = parseFloat(row.dataset.fiyat);
+    const azaltBtn = row.querySelector('.azalt');
+    const arttirBtn = row.querySelector('.arttir');
+    const miktarInput = row.querySelector('.miktar');
+    const araToplamEl = row.querySelector('.ara-toplam');
+
+      azaltBtn.addEventListener('click', function () {
+        let miktar = parseInt(miktarInput.value);
+        if (miktar > 1) {
+          miktar--;
+          miktarInput.value = miktar;
+        }
+      });
+
+      arttirBtn.addEventListener('click', function () {
+        let miktar = parseInt(miktarInput.value);
+        miktar++;
+        miktarInput.value = miktar;
+      });
+
+      document.querySelectorAll('.guncelle').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const miktar = parseInt(miktarInput.value);
+          const yeniAraToplam = birimFiyat * miktar;
+          araToplamEl.textContent = '₺' + yeniAraToplam.toLocaleString('tr-TR', { minimumFractionDigits: 2 });
+          araToplam2.textContent = araToplamEl.textContent;
+          toplam.textContent = araToplamEl.textContent;
+          kdv.textContent = '₺' + parseFloat(dataKDV * miktar);
+
+
+          let fiyat = toplam.textContent.slice(1, -3).replace('.', '');
+          document.getElementById('odemeLink').href = `odeme.html?fiyat=${fiyat}`;
+        });
+      });
+    });
+    
+</script>
+
+
+
+    <!--- Smooth Scroll js ---------->
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
